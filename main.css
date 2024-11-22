@@ -1,9 +1,11 @@
 body {
     background-color: rgb(201, 213, 217);
+    background-image: url(blue\ phoenix.png);
+    background-size: cover;
 }
 
 h1 {
     font-size: 96px;
     text-align: center;
-    color:rgb(0, 174, 255)
+    color: rgb(0, 174, 255)
 }

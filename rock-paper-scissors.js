@@ -1,7 +1,7 @@
 function p(text) {
     console.log(text);
 }
-const choices = ["rock", "paper", "scissors"];
+const choices = ["r", "p", "s"];
 function getComputerChoice() {
     const randomNumber = Math.random() * 3;
     const index = Math.floor(randomNumber);
@@ -12,7 +12,7 @@ function getComputerChoice() {
 p(getComputerChoice());
 
 function getHumanChoice() {
-    let humanChoice = prompt('Enter your choice (rock/paper/Scissors): ').toLowerCase()
+    let humanChoice = prompt('Enter your choice (r/p/s): ').toLowerCase()
 
     if (choices.includes(humanChoice)) {
         return humanChoice
@@ -34,52 +34,52 @@ function playGame() {
             p("You Lose")
          }
 
-        if (humanChoice === "rock" && computerChoice === "scissors") {
+        if (humanChoice === "r" && computerChoice === "s") {
             humanScore = humanScore + 1;
             p("You Win");
 
         }
 
-        if (humanChoice === "paper" && computerChoice === "rock") {
+        if (humanChoice === "p" && computerChoice === "r") {
             humanScore = humanScore + 1;
             p("You Win");
         }
 
-        if (humanChoice === "scissors" && computerChoice === "paper") {
+        if (humanChoice === "s" && computerChoice === "p") {
             humanScore = humanScore + 1;
             p("You Win");
 
         }
 
-        if (humanChoice === "rock" && computerChoice === "paper") {
+        if (humanChoice === "r" && computerChoice === "p") {
             computerScore = computerScore + 1;
             p("You Lose");
 
         }
 
-        if (humanChoice === "paper" && computerChoice === "scissors") {
+        if (humanChoice === "p" && computerChoice === "s") {
             computerScore = computerScore + 1;
             p("You Lose")
 
         }
 
-        if (humanChoice === "scissors" && computerChoice === "rock") {
+        if (humanChoice === "s" && computerChoice === "r") {
             computerScore = computerScore + 1;
             p("You Lose")
 
         }
 
-        if (humanChoice === "rock" && computerChoice === "rock") {
+        if (humanChoice === "r" && computerChoice === "r") {
             p("You Tied")
 
         }
 
-        if (humanChoice === "paper" && computerChoice === "paper") {
+        if (humanChoice === "p" && computerChoice === "p") {
             p("You Tied")
 
         }
 
-        if (humanChoice === "scissors" && computerChoice === "scissors") {
+        if (humanChoice === "s" && computerChoice === "s") {
             p("You Tied")
 
         }
