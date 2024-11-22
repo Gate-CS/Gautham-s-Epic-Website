@@ -30,9 +30,9 @@ function playGame() {
 
     function playRound(humanChoice, computerChoice) {
         if (humanChoice === false) {
-            computerScore = computerScore + 1
+             computerScore = computerScore + 1
             p("You Lose")
-        }
+         }
 
         if (humanChoice === "rock" && computerChoice === "scissors") {
             humanScore = humanScore + 1;
